@@ -1,1 +1,2 @@
 # webLocalstorage
+iOS原生读取H5的localstorage
