@@ -16,6 +16,7 @@
 		7F1DD14820B4754400D00C8D /* localStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DD14720B4754400D00C8D /* localStorageTests.m */; };
 		7F1DD15320B4754400D00C8D /* localStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DD15220B4754400D00C8D /* localStorageUITests.m */; };
 		7F6B99CF210A29A500232754 /* dist.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B99CE210A29A500232754 /* dist.zip */; };
+		7FD022D621194A5200FA1BFE /* WebBridgeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD022D521194A5200FA1BFE /* WebBridgeHandler.m */; };
 		D885E8383B06B05757BF7602 /* libPods-localStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D44705B29EF198F257DB99 /* libPods-localStorage.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		7F1DD15220B4754400D00C8D /* localStorageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = localStorageUITests.m; sourceTree = "<group>"; };
 		7F1DD15420B4754400D00C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F6B99CE210A29A500232754 /* dist.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = dist.zip; sourceTree = "<group>"; };
+		7FD022D421194A5200FA1BFE /* WebBridgeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBridgeHandler.h; sourceTree = "<group>"; };
+		7FD022D521194A5200FA1BFE /* WebBridgeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBridgeHandler.m; sourceTree = "<group>"; };
 		8ACDDC38A4484FADEC03C023 /* Pods-localStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-localStorage/Pods-localStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF218E4A1AD040932519F71 /* Pods-localStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-localStorage/Pods-localStorage.release.xcconfig"; sourceTree = "<group>"; };
 		F5D44705B29EF198F257DB99 /* libPods-localStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-localStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,7 @@
 		7F1DD12D20B4754200D00C8D /* localStorage */ = {
 			isa = PBXGroup;
 			children = (
+				7FD022D3211949CF00FA1BFE /* CommonBridge */,
 				7F6B539520EF1331006EE60B /* Resoure */,
 				7F1DD12E20B4754200D00C8D /* AppDelegate.h */,
 				7F1DD12F20B4754200D00C8D /* AppDelegate.m */,
@@ -156,6 +160,15 @@
 				7F6B99CE210A29A500232754 /* dist.zip */,
 			);
 			path = Resoure;
+			sourceTree = "<group>";
+		};
+		7FD022D3211949CF00FA1BFE /* CommonBridge */ = {
+			isa = PBXGroup;
+			children = (
+				7FD022D421194A5200FA1BFE /* WebBridgeHandler.h */,
+				7FD022D521194A5200FA1BFE /* WebBridgeHandler.m */,
+			);
+			path = CommonBridge;
 			sourceTree = "<group>";
 		};
 		EAF0601C8342FA5388E129AB /* Pods */ = {
@@ -322,6 +335,7 @@
 			files = (
 				7F1DD13320B4754200D00C8D /* ViewController.m in Sources */,
 				7F1DD13E20B4754300D00C8D /* main.m in Sources */,
+				7FD022D621194A5200FA1BFE /* WebBridgeHandler.m in Sources */,
 				7F1DD13020B4754200D00C8D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,6 @@
 target ‘localStorage’ do
 
 pod 'SSZipArchive'
+pod 'WebViewJavascriptBridge'
 
 end

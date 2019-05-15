@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "WebBridgeHandler.h"
+
+#import <WKWebViewJavascriptBridge.h>
 #import <WebKit/WebKit.h>
-#import <SSZipArchive/SSZipArchive.h>
 
-#define FILENAME @"dist"
 
-@interface ViewController ()<WKNavigationDelegate>
+
+@interface ViewController ()
 
 @property (nonatomic, strong)WKWebView *webView;
 @property (nonatomic, strong)UIActivityIndicatorView *activity;
@@ -21,15 +23,33 @@
 
 @implementation ViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupContentWebView];
+//    [self setupContentWebView];
+    
+    [self loadServerWebView];
+//    初始化webBridge框架
+    WebBridgeHandler *bridgeHandler = [[WebBridgeHandler alloc] initWithWebView:self.webView delegate:self];;
+    
+    
+}
+
+- (void)loadServerWebView {
+    //  1.  创建webview
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+    self.webView = webView;
+    
+    [self.view addSubview:webView];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8080"]]];
+    [self createActivityIndicator:webView];
+}
+
+- (void)loadRequestWithWebView:(WKWebView *)webView{
+    //  创建请求
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:8080/#/"]];
+    [webView loadRequest:request];
 }
 
 - (void)setupContentWebView {
@@ -80,16 +100,7 @@
     [self.activity.layer setCornerRadius:5];
 }
 
-#pragma mark: --delegate
-- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation{
-    NSLog(@"开始载入...");
-    [self.activity startAnimating];
-}
 
-- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
-    NSLog(@"载入完成");
-    [self.activity stopAnimating];
-}
 
 
 
