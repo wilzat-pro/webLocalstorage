@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083CC920F7637E47CB039001B4922F79 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 71FE19A6CADC73F0E65185CA15C8CDF7 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0BBC074D6735D05B6838D7599CEC1812 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAC7BEF664B440D3A0CAD715E8B216F /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23264C334FC14213101A51D7FC04462F /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = A08893EBEDE199DFA32A300A8EE816F5 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		27D737623CE4301D79A88CFD19F0A0B6 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEED693D2D51E4AC94E542533FDCB07 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DB497F7A16B8DD7F8C2178F407AC6AC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B0F967440A815BF05005FC927AD8D7C /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		315E43884B15F3AC4E2E0340763FC773 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0F27269F5D16BB56E8C8E363E36DED /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40C8C6624123B8B046BF25127CE5B615 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 9529ED7E5343BE5E4369712EB093A8D8 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		479F40D5463D161CDAEF4CC8B33F9D7E /* minishared.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F64CFC3CD7FF3B942C4308F9F174485 /* minishared.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C3B4E4946A90D3789AD7391DB7DC574 /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 349C4A9438EF8A05303501C7F1CA2C67 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5554E23F5A6DD42480993E50F1D6E295 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 90E94D1AD981B8D39E463463B0AB4776 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D3672F8C765F98EB66B3695A1D7E620 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B338D7D8D75FDB4981763B323E9A5D /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		62148882E0EA7E37726234FF9F10DFC3 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC8F96E3638E3550053D60EE6945FB /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66A5A9053106798AA19716869D38402C /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 911126D8C9F2E361702C3F9FC91C15E0 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C06ADF7A42A2EB78680E12DB888130E /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = C00C3F67743076265939152ECBB6B8E0 /* minishared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		709AE7F546BCEC06269C96DE76A23607 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7E8DCC295940283B3695FB89C9072B /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73F1FBA05633BB34193372299734F705 /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 982A488B5E5612615075C80964DE0225 /* ioapi_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77574CF592AC8CA5322D28E049AB999E /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3708F1A9D265F10F3850B0E9BD2BF458 /* WebViewJavascriptBridge_JS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		77CD9E65B676367F69F291DB449B7EF0 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ED6D90BD6F92C26FCCD8A6BD6DC0B1 /* WebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		80066D476BDD97D45F80EFF990A77395 /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1DC23B4C6606BA22F3C631F621DB48 /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84770EE32AE4F7984514B00812F281B7 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B33DF86A7999E0DE5ED1E500D32D53 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		863B426705FBF1946B9F65ED0268A39F /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = D107C3AA78AB6369889CE7D171F78680 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A516F52186CE1914A62C7E619743DC0 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = B8B6DD6DEE4BDF69D00200737C9C1B3B /* ioapi_buf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8DEC000EFC4A2158247B16CFE391008F /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = B6216328E964FD8BF89B6DE5B785A982 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8FA5D665FE5EB81C89A6DEA2CC4DE3F3 /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A444A05E8CAF7EABFC6E76018F21C0 /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B11D94ED3865CB383FAAC2F6C7135A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F10480955EA41CE990370E1E30820C /* UIKit.framework */; };
+		A4A06BA31254D982C32AC4DE0F3403FA /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D628CBDA7FF725A17A704DC03B1BD47B /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9BBB334E903C8004B34E077A4970A35 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 885DF1E3535363755BCF62FCEA973FD7 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AF5AF45C6BC3F2B08CDC976CC56883A7 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = B656FC7B1D42C1C577FB6D59CC5C4BDB /* aes_ni.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B37E344BDDC07800E347824835682273 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 77671D28E0566B879B2427795BFDBD2E /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B599C886E7EC1271407E8E2C53EC71C7 /* Pods-localStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B62B6349FD45D4735C86434BA0800847 /* Pods-localStorage-dummy.m */; };
+		B75C8787050E1B18E2D9BDD347B7C4B9 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A6A5B4138ED96A567CC38C5949CFD1 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C15614A0B9AE7621D869C99D5FC80A19 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1644A724553D66FC67558B3585142F4E /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBF8CA9781D469BD98E378A766F581B3 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE8DFC52EEAC3C8964B9E475FCB6D0C /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCC654BF585EE1DD5AB95C8CE0739C47 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2008F1A0A55B3E6E32EB174C974F0319 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D0B305B99B5A64E6AB883BBEF410A5FA /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E50A13A61054A82FDF18CB89D698 /* SSZipArchive-dummy.m */; };
+		D192EB60220A833CFE7D8CCE6D4BC649 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 378970AFA22D39AB2BC0541C1D761F20 /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1A8042D7016F444CF05B23317F0D18E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B77A2945E85AFD828DA3402960CE6B2 /* WebKit.framework */; };
+		D3C73A6D2956299E9973E4CA0C6C2B12 /* WebViewJavascriptBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A04138764B8F33D152EE4A07C6C4BB /* WebViewJavascriptBridge-dummy.m */; };
+		D562AE0F92F74C2A76D443FE3D67E538 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D34A078067E1F5EC9BD41D627EF7FEB /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D9077EB1254B614AA08DAEA7FA95D0AB /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3812FECD95AD526EFFD9294005493 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DF5D927AD50DE4B56ECB1AD5E0006DF9 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 684825AA51C54B30A1AEB0EC02EFB46C /* WebViewJavascriptBridgeBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E2A5E89F7C58A42105218E4CBC5F0825 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 056B2A21EA72764686124E2A2C0C7178 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E394A0780208388376BFAB12A398269E /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBCD6AAE483C3CD03CDE78AE6121A37 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E608B5FBAA58D63BF062496D3424A583 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = E48A50C2C40472BE8AD8AFB97875392C /* ioapi_mem.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA59FCF31CC01B8C4B6FB225A88A9E48 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 476D72F8574DFBFDFF65369A5AB0FA03 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC57AECC13C3DA4871A1C790E37C2DDE /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 56B8B33BCE53648999F1B63F6EF17D36 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC6A59AB6132FBDF820FF03D035931EC /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F73DD554A5B232D8C30590D019D7513 /* crypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F319F5E5A1D4070D812C76768321249A /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = B80B2EF33DD0F56DD059DDF0C51BC1EF /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F74529A602095F1A4139A778DF333380 /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B90C5FF9B1CB5D3F6B464D693FEE7C /* ioapi_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8D52F4BF3A30D65C90D0D0F7CAEF58F /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = 606CC4E9F3954ECEFF0490AB9033C5DA /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FBD68063D6257A0EF1F1BB6731051EE0 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B45686DCF2B5632BDF74F9603C4B56 /* WKWebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2381A40A9879242D0C277925AF04E6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21028C5F3862F8302700FBF20D6F2EB;
+			remoteInfo = SSZipArchive;
+		};
+		AAE69A3BE8212EE5B6DF08ADEAB3CA21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3B9487341FD568124F7FA035F560BC;
+			remoteInfo = WebViewJavascriptBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056B2A21EA72764686124E2A2C0C7178 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		1483E1FA322DA759A5D49C3DF80F1C10 /* Pods-localStorage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-localStorage-resources.sh"; sourceTree = "<group>"; };
+		1644A724553D66FC67558B3585142F4E /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
+		18A6A5B4138ED96A567CC38C5949CFD1 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		19B90C5FF9B1CB5D3F6B464D693FEE7C /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
+		1D7E8DCC295940283B3695FB89C9072B /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
+		2008F1A0A55B3E6E32EB174C974F0319 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		20A444A05E8CAF7EABFC6E76018F21C0 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge_JS.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		22ED6D90BD6F92C26FCCD8A6BD6DC0B1 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		24A04138764B8F33D152EE4A07C6C4BB /* WebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
+		25B45686DCF2B5632BDF74F9603C4B56 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		29B338D7D8D75FDB4981763B323E9A5D /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		2E0F27269F5D16BB56E8C8E363E36DED /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
+		2E1DC23B4C6606BA22F3C631F621DB48 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		32E4F7857E16DF5A5EFAE9748DD22668 /* Pods-localStorage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-localStorage-acknowledgements.plist"; sourceTree = "<group>"; };
+		349C4A9438EF8A05303501C7F1CA2C67 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
+		3708F1A9D265F10F3850B0E9BD2BF458 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		378970AFA22D39AB2BC0541C1D761F20 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		476D72F8574DFBFDFF65369A5AB0FA03 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
+		4CEED693D2D51E4AC94E542533FDCB07 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
+		4D34A078067E1F5EC9BD41D627EF7FEB /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
+		56B8B33BCE53648999F1B63F6EF17D36 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		5AAECBAA77F4CF740CE05BF3D36E3126 /* libPods-localStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-localStorage.a"; path = "libPods-localStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB3812FECD95AD526EFFD9294005493 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		5F73DD554A5B232D8C30590D019D7513 /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
+		606CC4E9F3954ECEFF0490AB9033C5DA /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_ni.h; path = SSZipArchive/minizip/aes/aes_ni.h; sourceTree = "<group>"; };
+		684825AA51C54B30A1AEB0EC02EFB46C /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridgeBase.m; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		70FC2E0471E917E1EA8E306F5F809B73 /* Pods-localStorage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-localStorage-frameworks.sh"; sourceTree = "<group>"; };
+		71FE19A6CADC73F0E65185CA15C8CDF7 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		76B33DF86A7999E0DE5ED1E500D32D53 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		77671D28E0566B879B2427795BFDBD2E /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
+		79F5E76B78680D156107D1EE0A5F05A0 /* Pods-localStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-localStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		7B0F967440A815BF05005FC927AD8D7C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		7EA9D5294F795307EB0B4F2A1AD88E8F /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		885DF1E3535363755BCF62FCEA973FD7 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		8CAC7BEF664B440D3A0CAD715E8B216F /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		8EBCD6AAE483C3CD03CDE78AE6121A37 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		8FDD3EF6E8C18E8F88007A39E3005B03 /* Pods-localStorage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-localStorage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90E94D1AD981B8D39E463463B0AB4776 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
+		911126D8C9F2E361702C3F9FC91C15E0 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9529ED7E5343BE5E4369712EB093A8D8 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/minizip/aes/brg_endian.h; sourceTree = "<group>"; };
+		982A488B5E5612615075C80964DE0225 /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
+		9B77A2945E85AFD828DA3402960CE6B2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		9F64CFC3CD7FF3B942C4308F9F174485 /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
+		9FE8DFC52EEAC3C8964B9E475FCB6D0C /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/minizip/aes/pwd2key.h; sourceTree = "<group>"; };
+		A08893EBEDE199DFA32A300A8EE816F5 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		A091E50A13A61054A82FDF18CB89D698 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		B017BF1D115B8DD3D10A427497D1C2A3 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		B1F10480955EA41CE990370E1E30820C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6216328E964FD8BF89B6DE5B785A982 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+		B62B6349FD45D4735C86434BA0800847 /* Pods-localStorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-localStorage-dummy.m"; sourceTree = "<group>"; };
+		B656FC7B1D42C1C577FB6D59CC5C4BDB /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		B6FC8F96E3638E3550053D60EE6945FB /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		B80B2EF33DD0F56DD059DDF0C51BC1EF /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
+		B8B6DD6DEE4BDF69D00200737C9C1B3B /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
+		BE395E780589A4317F14CDF3C878D109 /* WebViewJavascriptBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebViewJavascriptBridge.xcconfig; sourceTree = "<group>"; };
+		C00C3F67743076265939152ECBB6B8E0 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		CA9263655CD04E40ABCF624D876A849E /* libWebViewJavascriptBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebViewJavascriptBridge.a; path = libWebViewJavascriptBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD28B4B0D1BD29E0BB3C85DB8D00A4E1 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		D107C3AA78AB6369889CE7D171F78680 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
+		D628CBDA7FF725A17A704DC03B1BD47B /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		E48A50C2C40472BE8AD8AFB97875392C /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
+		E78872C1F42CBAA333894D2444417FB7 /* Pods-localStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-localStorage.release.xcconfig"; sourceTree = "<group>"; };
+		FD433D7A22939510B7276A6A4453E44D /* WebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		076D5F009F8B7274299E83F3D8E4D926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B11D94ED3865CB383FAAC2F6C7135A0 /* UIKit.framework in Frameworks */,
+				D1A8042D7016F444CF05B23317F0D18E /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B45C5E9EC257123A7314195BF4B98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9391648031DC1B05A37196FDF9D80260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3D3010761A40BFD91A5D6E022B006B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D7F7A546E95040718F67C67AE968798 /* SSZipArchive */,
+				AAFFB06C171A5B643AE8D7EB51A26818 /* WebViewJavascriptBridge */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20B9BDD693B6B2F7CD76067BF89ED3BB /* Pods-localStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD3EF6E8C18E8F88007A39E3005B03 /* Pods-localStorage-acknowledgements.markdown */,
+				32E4F7857E16DF5A5EFAE9748DD22668 /* Pods-localStorage-acknowledgements.plist */,
+				B62B6349FD45D4735C86434BA0800847 /* Pods-localStorage-dummy.m */,
+				70FC2E0471E917E1EA8E306F5F809B73 /* Pods-localStorage-frameworks.sh */,
+				1483E1FA322DA759A5D49C3DF80F1C10 /* Pods-localStorage-resources.sh */,
+				79F5E76B78680D156107D1EE0A5F05A0 /* Pods-localStorage.debug.xcconfig */,
+				E78872C1F42CBAA333894D2444417FB7 /* Pods-localStorage.release.xcconfig */,
+			);
+			name = "Pods-localStorage";
+			path = "Target Support Files/Pods-localStorage";
+			sourceTree = "<group>";
+		};
+		2D7F7A546E95040718F67C67AE968798 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				1D7E8DCC295940283B3695FB89C9072B /* aes.h */,
+				B656FC7B1D42C1C577FB6D59CC5C4BDB /* aes_ni.c */,
+				606CC4E9F3954ECEFF0490AB9033C5DA /* aes_ni.h */,
+				90E94D1AD981B8D39E463463B0AB4776 /* aescrypt.c */,
+				B6216328E964FD8BF89B6DE5B785A982 /* aeskey.c */,
+				77671D28E0566B879B2427795BFDBD2E /* aesopt.h */,
+				A08893EBEDE199DFA32A300A8EE816F5 /* aestab.c */,
+				B80B2EF33DD0F56DD059DDF0C51BC1EF /* aestab.h */,
+				9529ED7E5343BE5E4369712EB093A8D8 /* brg_endian.h */,
+				D107C3AA78AB6369889CE7D171F78680 /* brg_types.h */,
+				5F73DD554A5B232D8C30590D019D7513 /* crypt.c */,
+				8CAC7BEF664B440D3A0CAD715E8B216F /* crypt.h */,
+				476D72F8574DFBFDFF65369A5AB0FA03 /* fileenc.c */,
+				1644A724553D66FC67558B3585142F4E /* fileenc.h */,
+				56B8B33BCE53648999F1B63F6EF17D36 /* hmac.c */,
+				4CEED693D2D51E4AC94E542533FDCB07 /* hmac.h */,
+				7B0F967440A815BF05005FC927AD8D7C /* ioapi.c */,
+				76B33DF86A7999E0DE5ED1E500D32D53 /* ioapi.h */,
+				B8B6DD6DEE4BDF69D00200737C9C1B3B /* ioapi_buf.c */,
+				982A488B5E5612615075C80964DE0225 /* ioapi_buf.h */,
+				E48A50C2C40472BE8AD8AFB97875392C /* ioapi_mem.c */,
+				19B90C5FF9B1CB5D3F6B464D693FEE7C /* ioapi_mem.h */,
+				C00C3F67743076265939152ECBB6B8E0 /* minishared.c */,
+				9F64CFC3CD7FF3B942C4308F9F174485 /* minishared.h */,
+				5CB3812FECD95AD526EFFD9294005493 /* prng.c */,
+				349C4A9438EF8A05303501C7F1CA2C67 /* prng.h */,
+				29B338D7D8D75FDB4981763B323E9A5D /* pwd2key.c */,
+				9FE8DFC52EEAC3C8964B9E475FCB6D0C /* pwd2key.h */,
+				4D34A078067E1F5EC9BD41D627EF7FEB /* sha1.c */,
+				2E0F27269F5D16BB56E8C8E363E36DED /* sha1.h */,
+				885DF1E3535363755BCF62FCEA973FD7 /* SSZipArchive.h */,
+				B6FC8F96E3638E3550053D60EE6945FB /* SSZipArchive.m */,
+				911126D8C9F2E361702C3F9FC91C15E0 /* SSZipCommon.h */,
+				2008F1A0A55B3E6E32EB174C974F0319 /* unzip.c */,
+				056B2A21EA72764686124E2A2C0C7178 /* unzip.h */,
+				71FE19A6CADC73F0E65185CA15C8CDF7 /* zip.c */,
+				D628CBDA7FF725A17A704DC03B1BD47B /* zip.h */,
+				8EBCD6AAE483C3CD03CDE78AE6121A37 /* ZipArchive.h */,
+				74B6A0B16F3A2EBF374CB74A1EECFAFD /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		373D2BDEAFE173C5B9E2A960BC001FCF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE395E780589A4317F14CDF3C878D109 /* WebViewJavascriptBridge.xcconfig */,
+				24A04138764B8F33D152EE4A07C6C4BB /* WebViewJavascriptBridge-dummy.m */,
+				FD433D7A22939510B7276A6A4453E44D /* WebViewJavascriptBridge-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WebViewJavascriptBridge";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				952CE75E2C61C9A46BEF234EAAFADEE4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74B6A0B16F3A2EBF374CB74A1EECFAFD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B017BF1D115B8DD3D10A427497D1C2A3 /* SSZipArchive.xcconfig */,
+				A091E50A13A61054A82FDF18CB89D698 /* SSZipArchive-dummy.m */,
+				CD28B4B0D1BD29E0BB3C85DB8D00A4E1 /* SSZipArchive-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				1A3D3010761A40BFD91A5D6E022B006B /* Pods */,
+				8A53107A62EAD823406D78372BCB812C /* Products */,
+				FC2789233CD5D980735C2ED934393632 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A53107A62EAD823406D78372BCB812C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AAECBAA77F4CF740CE05BF3D36E3126 /* libPods-localStorage.a */,
+				7EA9D5294F795307EB0B4F2A1AD88E8F /* libSSZipArchive.a */,
+				CA9263655CD04E40ABCF624D876A849E /* libWebViewJavascriptBridge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952CE75E2C61C9A46BEF234EAAFADEE4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B1F10480955EA41CE990370E1E30820C /* UIKit.framework */,
+				9B77A2945E85AFD828DA3402960CE6B2 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AAFFB06C171A5B643AE8D7EB51A26818 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				378970AFA22D39AB2BC0541C1D761F20 /* WebViewJavascriptBridge.h */,
+				22ED6D90BD6F92C26FCCD8A6BD6DC0B1 /* WebViewJavascriptBridge.m */,
+				20A444A05E8CAF7EABFC6E76018F21C0 /* WebViewJavascriptBridge_JS.h */,
+				3708F1A9D265F10F3850B0E9BD2BF458 /* WebViewJavascriptBridge_JS.m */,
+				18A6A5B4138ED96A567CC38C5949CFD1 /* WebViewJavascriptBridgeBase.h */,
+				684825AA51C54B30A1AEB0EC02EFB46C /* WebViewJavascriptBridgeBase.m */,
+				2E1DC23B4C6606BA22F3C631F621DB48 /* WKWebViewJavascriptBridge.h */,
+				25B45686DCF2B5632BDF74F9603C4B56 /* WKWebViewJavascriptBridge.m */,
+				373D2BDEAFE173C5B9E2A960BC001FCF /* Support Files */,
+			);
+			name = WebViewJavascriptBridge;
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		FC2789233CD5D980735C2ED934393632 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B9BDD693B6B2F7CD76067BF89ED3BB /* Pods-localStorage */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		260D6458F8810C175238E466AC6E421E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D192EB60220A833CFE7D8CCE6D4BC649 /* WebViewJavascriptBridge.h in Headers */,
+				8FA5D665FE5EB81C89A6DEA2CC4DE3F3 /* WebViewJavascriptBridge_JS.h in Headers */,
+				B75C8787050E1B18E2D9BDD347B7C4B9 /* WebViewJavascriptBridgeBase.h in Headers */,
+				80066D476BDD97D45F80EFF990A77395 /* WKWebViewJavascriptBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72EF8C6FC89F09E7427ACBA99EE34BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709AE7F546BCEC06269C96DE76A23607 /* aes.h in Headers */,
+				F8D52F4BF3A30D65C90D0D0F7CAEF58F /* aes_ni.h in Headers */,
+				B37E344BDDC07800E347824835682273 /* aesopt.h in Headers */,
+				F319F5E5A1D4070D812C76768321249A /* aestab.h in Headers */,
+				40C8C6624123B8B046BF25127CE5B615 /* brg_endian.h in Headers */,
+				863B426705FBF1946B9F65ED0268A39F /* brg_types.h in Headers */,
+				0BBC074D6735D05B6838D7599CEC1812 /* crypt.h in Headers */,
+				C15614A0B9AE7621D869C99D5FC80A19 /* fileenc.h in Headers */,
+				27D737623CE4301D79A88CFD19F0A0B6 /* hmac.h in Headers */,
+				84770EE32AE4F7984514B00812F281B7 /* ioapi.h in Headers */,
+				73F1FBA05633BB34193372299734F705 /* ioapi_buf.h in Headers */,
+				F74529A602095F1A4139A778DF333380 /* ioapi_mem.h in Headers */,
+				479F40D5463D161CDAEF4CC8B33F9D7E /* minishared.h in Headers */,
+				4C3B4E4946A90D3789AD7391DB7DC574 /* prng.h in Headers */,
+				CBF8CA9781D469BD98E378A766F581B3 /* pwd2key.h in Headers */,
+				315E43884B15F3AC4E2E0340763FC773 /* sha1.h in Headers */,
+				A9BBB334E903C8004B34E077A4970A35 /* SSZipArchive.h in Headers */,
+				66A5A9053106798AA19716869D38402C /* SSZipCommon.h in Headers */,
+				E2A5E89F7C58A42105218E4CBC5F0825 /* unzip.h in Headers */,
+				A4A06BA31254D982C32AC4DE0F3403FA /* zip.h in Headers */,
+				E394A0780208388376BFAB12A398269E /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B3B9487341FD568124F7FA035F560BC /* WebViewJavascriptBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3681D18B060401B1E9B900A3B78D4CB /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */;
+			buildPhases = (
+				C01FA0DEC321B6A880B78EC797D5E2FB /* Sources */,
+				076D5F009F8B7274299E83F3D8E4D926 /* Frameworks */,
+				260D6458F8810C175238E466AC6E421E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebViewJavascriptBridge;
+			productName = WebViewJavascriptBridge;
+			productReference = CA9263655CD04E40ABCF624D876A849E /* libWebViewJavascriptBridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B21028C5F3862F8302700FBF20D6F2EB /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F125DC6C8A15A549C6F7B6CABB3D9B2D /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				2F36AB22429B1931EB2C0033D1113BE4 /* Sources */,
+				9391648031DC1B05A37196FDF9D80260 /* Frameworks */,
+				C72EF8C6FC89F09E7427ACBA99EE34BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 7EA9D5294F795307EB0B4F2A1AD88E8F /* libSSZipArchive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C95AC8F2B0836FB0CCA54BEFEF2923CD /* Pods-localStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF4D5B27E7765C3EB9A63423C945661 /* Build configuration list for PBXNativeTarget "Pods-localStorage" */;
+			buildPhases = (
+				35EC75C4F07D8F2ED5F04347B0BBF875 /* Sources */,
+				86B45C5E9EC257123A7314195BF4B98F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE6D93F8BB09DBD9EE6ED18F596F32E8 /* PBXTargetDependency */,
+				1D2D8C03B058C4DE128915C485B29D55 /* PBXTargetDependency */,
+			);
+			name = "Pods-localStorage";
+			productName = "Pods-localStorage";
+			productReference = 5AAECBAA77F4CF740CE05BF3D36E3126 /* libPods-localStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8A53107A62EAD823406D78372BCB812C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C95AC8F2B0836FB0CCA54BEFEF2923CD /* Pods-localStorage */,
+				B21028C5F3862F8302700FBF20D6F2EB /* SSZipArchive */,
+				2B3B9487341FD568124F7FA035F560BC /* WebViewJavascriptBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F36AB22429B1931EB2C0033D1113BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5AF45C6BC3F2B08CDC976CC56883A7 /* aes_ni.c in Sources */,
+				5554E23F5A6DD42480993E50F1D6E295 /* aescrypt.c in Sources */,
+				8DEC000EFC4A2158247B16CFE391008F /* aeskey.c in Sources */,
+				23264C334FC14213101A51D7FC04462F /* aestab.c in Sources */,
+				EC6A59AB6132FBDF820FF03D035931EC /* crypt.c in Sources */,
+				EA59FCF31CC01B8C4B6FB225A88A9E48 /* fileenc.c in Sources */,
+				EC57AECC13C3DA4871A1C790E37C2DDE /* hmac.c in Sources */,
+				2DB497F7A16B8DD7F8C2178F407AC6AC /* ioapi.c in Sources */,
+				8A516F52186CE1914A62C7E619743DC0 /* ioapi_buf.c in Sources */,
+				E608B5FBAA58D63BF062496D3424A583 /* ioapi_mem.c in Sources */,
+				6C06ADF7A42A2EB78680E12DB888130E /* minishared.c in Sources */,
+				D9077EB1254B614AA08DAEA7FA95D0AB /* prng.c in Sources */,
+				5D3672F8C765F98EB66B3695A1D7E620 /* pwd2key.c in Sources */,
+				D562AE0F92F74C2A76D443FE3D67E538 /* sha1.c in Sources */,
+				D0B305B99B5A64E6AB883BBEF410A5FA /* SSZipArchive-dummy.m in Sources */,
+				62148882E0EA7E37726234FF9F10DFC3 /* SSZipArchive.m in Sources */,
+				CCC654BF585EE1DD5AB95C8CE0739C47 /* unzip.c in Sources */,
+				083CC920F7637E47CB039001B4922F79 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35EC75C4F07D8F2ED5F04347B0BBF875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B599C886E7EC1271407E8E2C53EC71C7 /* Pods-localStorage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01FA0DEC321B6A880B78EC797D5E2FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C73A6D2956299E9973E4CA0C6C2B12 /* WebViewJavascriptBridge-dummy.m in Sources */,
+				77CD9E65B676367F69F291DB449B7EF0 /* WebViewJavascriptBridge.m in Sources */,
+				77574CF592AC8CA5322D28E049AB999E /* WebViewJavascriptBridge_JS.m in Sources */,
+				DF5D927AD50DE4B56ECB1AD5E0006DF9 /* WebViewJavascriptBridgeBase.m in Sources */,
+				FBD68063D6257A0EF1F1BB6731051EE0 /* WKWebViewJavascriptBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D2D8C03B058C4DE128915C485B29D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WebViewJavascriptBridge;
+			target = 2B3B9487341FD568124F7FA035F560BC /* WebViewJavascriptBridge */;
+			targetProxy = AAE69A3BE8212EE5B6DF08ADEAB3CA21 /* PBXContainerItemProxy */;
+		};
+		EE6D93F8BB09DBD9EE6ED18F596F32E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = B21028C5F3862F8302700FBF20D6F2EB /* SSZipArchive */;
+			targetProxy = 2381A40A9879242D0C277925AF04E6E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44DE670164CE990ADFA9F3972052A6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B017BF1D115B8DD3D10A427497D1C2A3 /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58FC1817909CDCD30B4AB7696AF96185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B017BF1D115B8DD3D10A427497D1C2A3 /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94A71A830C3EB450ED755EB3167E7BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78872C1F42CBAA333894D2444417FB7 /* Pods-localStorage.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6ADFB995F798E769E508119F3F1163D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F5E76B78680D156107D1EE0A5F05A0 /* Pods-localStorage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFE4EF0E79BFDD10C97809A1E43E5D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE395E780589A4317F14CDF3C878D109 /* WebViewJavascriptBridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WebViewJavascriptBridge;
+				PRODUCT_NAME = WebViewJavascriptBridge;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2F1038C8AEBDCDFF6589F4EAF746AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE395E780589A4317F14CDF3C878D109 /* WebViewJavascriptBridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WebViewJavascriptBridge;
+				PRODUCT_NAME = WebViewJavascriptBridge;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF4D5B27E7765C3EB9A63423C945661 /* Build configuration list for PBXNativeTarget "Pods-localStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6ADFB995F798E769E508119F3F1163D /* Debug */,
+				94A71A830C3EB450ED755EB3167E7BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3681D18B060401B1E9B900A3B78D4CB /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2F1038C8AEBDCDFF6589F4EAF746AA /* Debug */,
+				EFE4EF0E79BFDD10C97809A1E43E5D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F125DC6C8A15A549C6F7B6CABB3D9B2D /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FC1817909CDCD30B4AB7696AF96185 /* Debug */,
+				44DE670164CE990ADFA9F3972052A6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
